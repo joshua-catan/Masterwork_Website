@@ -172,7 +172,7 @@ const Drums = [
         price: "$930.10",
     },
     {
-        id: 22,
+        id: 23,
         image: "https://images.openai.com/static-rsc-1/I9M8QZ-3QaOqWo19whCpzC4lFJuS_VJ1NIKR4h6OXRwTYPCG3WTo7szhkZ9jgW6b8Hg6VaJhJFhF0JAu8yNqzoXNsSg-EvaWt0ViBNlP-J2ZaXxyG3fUGj9mAq9jXI_XvDJRsAxYp4MEWAaABrnVkQ6GgAHv0sjVu8dm7oUOnCyckDy627mZPBkvO_kaUZLmRyI2wjErXDzuDJyrrGVSi_tCypc0Aku3dNeMNK3dd6faRYFcozTjGq0iaajbNt_in4Mf2eShLOdsSu3fJe3RNA",
         name: "Tama Imperialstar",
         description: "The Tama Imperialstar is a complete acoustic drum set designed for beginner and intermediate players. It provides responsive drum tones and reliable hardware, making it suitable for practice, rehearsals, and live performances.",
