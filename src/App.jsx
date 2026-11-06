@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router'
-import Navbar from './components/Layout/Navigation'
+import Layout from './components/PageLayout'
 import Contact from './pages/Contact'
 import Explore from './pages/Explore'
 import ProductCard from './components/Products/ProductCard'
@@ -15,7 +15,7 @@ function App() {
       <ScrollToTop />
 
       <Routes>
-        <Route path='/' element={<Navbar />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='products' element={<Explore />} />
           <Route path='category/:category' element={<Category />} />
