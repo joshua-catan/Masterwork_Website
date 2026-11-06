@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { Mail } from 'lucide-react'
 
 function Footer() {
   return (
@@ -36,13 +37,12 @@ function Footer() {
           </div>
 
           <div>
-            <p className="max-w-xs text-sm leading-7 text-gray-400">
-                Joshua Catan
-                <br/>
-                Jay Justine Baldoza
-                <br/>
-                Cejay Gabotero
-            </p>
+            <h3 className="mb-5 inline-flex gap-2 font-semibold text-white"><Mail />Support</h3>
+            <ul className="space-y-3 text-sm text-gray-400">
+              <li><Link to="/contact" className="transition hover:text-white underline">Contact Us</Link></li>
+              <li><Link to="/contact" className="transition hover:text-white underline">Message Us</Link></li>
+              <li><Link to="/contact" className="transition hover:text-white underline">Suggestions</Link></li>
+            </ul>
           </div>
 
         </div>

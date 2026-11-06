@@ -13,12 +13,10 @@ function PopularInstruments() {
           <p className="mt-2 text-gray-500">We have something for everyone.</p>
 
         </div>
-        <Link
-          to="/products"
-          className="mb-8 inline-block rounded border border-gray-400 p-2 text-gray-700 transition hover:translate-x-1 hover:shadow-md"
-        >
+        <Link to="/products" className="mb-8 inline-block rounded border border-gray-400 p-2 text-gray-700 transition hover:translate-x-1 hover:shadow-md">
           View All Instruments ⟶
         </Link>
+        
       </div>
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -26,14 +24,10 @@ function PopularInstruments() {
           <Link
             to="/products"
             key={item.id}
-            className="group relative overflow-hidden border border-gray-300 bg-white shadow-md transition duration-300 hover:shadow-lg"
+            className="group relative overflow-hidden border rounded-sm border-gray-300 bg-white shadow-md transition duration-300 hover:shadow-2xl"
           >
             <div className="h-130 overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-              />
+              <img src={item.image} alt={item.name} className="h-full w-full object-cover transition duration-700 bg-gray-100 group-hover:scale-110 group-hover:shadow-[inset_0_-30px_30px_rgba(0,0,0,0.4)]"/>
             </div>
 
             <div className="flex flex-col items-start p-4">
@@ -41,8 +35,9 @@ function PopularInstruments() {
                 {item.name}
               </h3>
 
-              <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-black transition duration-300 group-hover:translate-x-2">
-                <CircleChevronRight />
+              <span className="mt-4 inline-flex text-gray-900 items-center gap-2 text-sm font-semibold transition duration-300 group-hover:translate-x-2">
+                Explore our Products
+                <CircleChevronRight /> 
               </span>
             </div>
           </Link>

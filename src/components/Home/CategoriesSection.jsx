@@ -9,8 +9,8 @@ function CategoriesSection() {
         <div>
 
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-500">Explore Collections</p>
-          <h2 className="text-3xl font-bold text-gray-900">Shop by Category</h2>
-          <p className="mt-2 text-gray-500">Everything you need to make great music.</p>
+          <h2 className="text-3xl -mt-2 font-bold text-gray-900">Shop by Category</h2>
+          <p className="-mt-1 text-gray-500">Everything you need to make great music.</p>
           
         </div>
 

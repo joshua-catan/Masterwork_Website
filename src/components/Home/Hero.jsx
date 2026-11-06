@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { ShoppingCart } from 'lucide-react'
 
 function Hero() {
   return (
@@ -6,9 +7,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10 max-w-2xl">
-        <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-gray-300">
-          Masterwork Music
-        </p>
+        <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-gray-300">Masterwork Music</p>
 
         <h1 className="mb-5 text-4xl font-extrabold text-white md:text-6xl">
           Find Your Sound.
@@ -22,10 +21,8 @@ function Hero() {
           we have something for everyone.
         </p>
 
-        <Link
-          to="/products"
-          className="inline-block rounded bg-gray-600 px-7 py-3 font-semibold text-white transition duration-300 hover:bg-gray-700 hover:shadow-lg"
-        >
+        <Link to="/products" className="inline-flex gap-2 rounded bg-gray-200 px-7 py-3 font-semibold text-gray-900 transition duration-300 hover:bg-gray-700 hover:text-white hover:shadow-lg hover:translate-x-2">
+          <ShoppingCart />
           Shop Now ⟶
         </Link>
       </div>
