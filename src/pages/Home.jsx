@@ -9,7 +9,6 @@ function Home() {
       <Hero />   
       <CategoriesSection />
       <PopularInstruments />
-      <Footer />
     </div>
   );
 }
