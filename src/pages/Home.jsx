@@ -1,7 +1,7 @@
 import Hero from '../components/Home/Hero';
 import CategoriesSection from '../components/Home/CategoriesSection';
 import PopularInstruments from '../components/Home/PopularInstruments';
-import Footer from '../components/Layout/footer';
+import Service from '../components/Home/service'
 
 function Home() {
   return (
@@ -9,6 +9,7 @@ function Home() {
       <Hero />   
       <CategoriesSection />
       <PopularInstruments />
+      <Service />
     </div>
   );
 }

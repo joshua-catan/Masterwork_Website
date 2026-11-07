@@ -49,7 +49,7 @@ function Explore() {
       {categories.map((category) => (
         <section key={category.path} className="px-8 py-16 md:px-16">
 
-          <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
+          <div className="mb-12 flex flex-col border-t border-gray-300 pt-10 items-center justify-between gap-4 md:flex-row">
 
             <div>
               <p className="mb-3 mx-0.5 font-semibold uppercase tracking-[0.3em] text-gray-500">
@@ -70,8 +70,15 @@ function Explore() {
             {category.items.slice(0, 3).map((item) => (
 
               <Link key={item.id}to={`/category/${category.path}/${item.id}`}className="group rounded-sm flex h-full flex-col overflow-hidden bg-white shadow-md border border-gray-300 transition duration-300 hover:shadow-2xl hover:scale-101">
+                
+                <div className="relative overflow-hidden">
 
-                <img src={item.image}alt={item.name}className="w-full h-130 object-cover group-hover:scale-110 transition duration-500 group-hover:shadow-[inset_0_-20px_30px_rgba(0,0,0,0.4)]"/>
+                  <h1 className="absolute top-5 left-5 z-100 text-xs font-bold tracking-widest uppercase bg-gray-700 text-white px-4 py-2 rounded">
+                    Get Now
+                  </h1>
+                  <img src={item.image}alt={item.name}className="w-full h-130 object-cover group-hover:scale-110 transition duration-500 group-hover:shadow-[inset_0_-20px_30px_rgba(0,0,0,0.4)]"/>
+                </div>
+                
                 <div className="flex flex-1 flex-col p-6">
 
                   <h3 className="text-xl font-bold text-gray-800">{item.name}</h3>

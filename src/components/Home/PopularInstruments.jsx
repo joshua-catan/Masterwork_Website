@@ -5,7 +5,7 @@ import { Guitar } from '../../data/categoryItems';
 function PopularInstruments() {
   return (
     <section className="px-8 py-16 md:px-16">
-      <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div className="mb-12 flex flex-col border-t border-gray-300 pt-10 items-center justify-between gap-4 md:flex-row">
         <div>
             
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-gray-500">Discover Collections</p>
@@ -27,6 +27,10 @@ function PopularInstruments() {
             className="group relative overflow-hidden border rounded-sm border-gray-300 bg-white shadow-md transition duration-300 hover:shadow-2xl"
           >
             <div className="h-130 overflow-hidden">
+              <h1 className="absolute top-5 left-5 z-50 text-xs font-bold tracking-widest uppercase bg-gray-900 text-white px-4 py-2 rounded-full">
+                Tap to Explore
+              </h1>
+
               <img src={item.image} alt={item.name} className="h-full w-full object-cover transition duration-700 bg-gray-100 group-hover:scale-110 group-hover:shadow-[inset_0_-30px_30px_rgba(0,0,0,0.4)]"/>
             </div>
 

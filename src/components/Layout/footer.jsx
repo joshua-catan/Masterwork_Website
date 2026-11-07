@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { Mail } from 'lucide-react'
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -16,6 +17,13 @@ function Footer() {
                 Discover your sound with quality musical instruments.
                 Everything you need to create beautiful music.
             </p>
+            
+            <div className='mt-3 items-center inline-flex gap-2'>
+              <FaFacebook size={25}/>
+              <FaInstagram size={25}/>
+              <FaTiktok size={25}/>
+            </div>
+
           </div>
 
           <div>

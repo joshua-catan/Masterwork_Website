@@ -24,16 +24,9 @@ function CategoriesSection() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {Categories.map((category) => (
-          <Link
-            to={`/category/${category.belong}`}
-            key={category.name}
-            className="group relative h-72 overflow-hidden rounded-lg bg-gray-900 shadow-sm"
-          >
-            <img
-              src={category.image}
-              alt={category.name}
-              className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
+          <Link to={`/category/${category.belong}`}key={category.name} className="group relative h-72 overflow-hidden rounded-lg bg-gray-900 shadow-sm">
+            
+            <img src={category.image} alt={category.name} className="h-full w-full object-cover transition duration-700 group-hover:scale-110"/>
 
             <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/10 to-transparent"></div>
 

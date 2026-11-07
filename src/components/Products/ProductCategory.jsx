@@ -24,7 +24,7 @@ function Category() {
   return (
     <section className="px-5 mt-7 py-5 md:px-5">
 
-        <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="mb-12 border-t border-gray-300 pt-10 flex flex-col items-center justify-between gap-4 md:flex-row">
           <div>
              <p className="mb-3 mx-0.5 font-semibold uppercase tracking-[0.3em] text-gray-500">
                 Masterwork Music
@@ -48,7 +48,13 @@ function Category() {
 
               <Link key={product.id} to={`/category/${category}/${product.id}`} className={cardStyle}>
 
-                <img src={product.image}alt={product.name}className={imageStyle}/>
+                <div className="relative overflow-hidden">
+                  <h1 className="absolute top-5 left-5 text-xs z-50 font-bold tracking-widest uppercase bg-gray-700 text-white px-4 py-2 rounded">
+                    Get Now
+                  </h1>
+                  <img src={product.image}alt={product.name}className={imageStyle}/>
+                </div>
+               
                 <div className="flex flex-1 flex-col p-6">
 
                   <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
@@ -64,6 +70,17 @@ function Category() {
                 </div>
               </Link>
             ))}
+          </div>
+
+          <div className="mt-20 border-t border-gray-200 pt-10 text-center">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Make Music Your Way.
+            </h2>
+
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+              Discover quality musical instruments and find everything you need
+              to bring your musical ideas to life.
+            </p>
           </div>
     </section>
   );
