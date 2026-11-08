@@ -69,16 +69,17 @@ function Contact() {
           />
       </div>
 
-      <div className='w-full'>
-          <label className="text-sm font-bold text-gray-700 mb-2">
-            Message
-          </label>
-          <input className={fillStyle}
-          type="text"
-          placeholder="Enter your complete address"
+      <div className="w-full">
+        <label className="block text-sm font-bold text-gray-700 mb-2">
+          Message
+        </label>
+
+        <textarea
+          className={`${fillStyle} min-h-36 resize-none`}
+          placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          />
+        />
       </div>
 
         <button onClick={() => setIsSent(true)} className="flex items-center justify-center gap-2 bg-gray-800 text-gray-100 px-6 py-3 rounded hover:bg-gray-700 hover:scale-101 transition duration-300">
