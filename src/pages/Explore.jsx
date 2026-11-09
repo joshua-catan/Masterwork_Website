@@ -29,8 +29,6 @@ function Explore() {
 
   return (
     <div>
-
-      {/* Hero Section */}
       <div className="w-full h-90 object-cover flex-col p-10 items-center bg-[url('https://images.unsplash.com/photo-1681855018254-a54babc49ea3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')] bg-cover bg-center">
 
         <h1 className="mb-5 text-4xl font-extrabold text-white md:text-6xl">

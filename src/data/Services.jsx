@@ -12,11 +12,6 @@ const Benefits = [
         description: 'Shop confidently with secure payment options.'
     },
     {
-        icon: Award,
-        title: 'Quality Products',
-        description: 'Discover instruments selected for every musician.'
-    },
-    {
         icon: Headphones,
         title: 'Customer Support',
         description: 'We are here to help you find your perfect sound.'

@@ -107,25 +107,25 @@ function CheckOut() {
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 p-1 w-full border-t border-b border-gray-100 justify-center items-center z-50">
 
                                 <div className="flex items-center justify-center gap-3">
-                                    <Truck className="text-gray-300 shrink-0" size={30} />
+                                    <Truck className="text-gray-300" size={30} />
                                     <div>
-                                        <p className="text-sm font-bold text-gray-200">Delivery</p>
+                                        <p className="text-sm text-gray-200">Delivery</p>
                                         <p className="text-xs text-gray-500">Convenient</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center justify-center gap-3">
-                                    <ShieldCheck className="text-gray-300 shrink-0" size={30} />
+                                    <ShieldCheck className="text-gray-300" size={30} />
                                     <div>
-                                        <p className="text-sm font-bold text-gray-200">Quality</p>
+                                        <p className="text-sm text-gray-200">Quality</p>
                                         <p className="text-xs text-gray-500">Trusted products</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center justify-center gap-3">
-                                    <Headphones className="text-gray-300 shrink-0" size={30} />
+                                    <Headphones className="text-gray-300" size={30} />
                                     <div>
-                                        <p className="text-sm font-bold text-gray-200">Support</p>
+                                        <p className="text-sm text-gray-200">Support</p>
                                         <p className="text-xs text-gray-500">Customer care</p>
                                     </div>
                                 </div>
